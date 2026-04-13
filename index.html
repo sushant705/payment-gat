@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Project Resource Fee Payment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="payment-card">
+      <h1>College Project Resource Fee</h1>
+      <p class="subtitle">
+        Please pay the essential project resource fee to proceed with your final
+        year project submission.
+      </p>
+
+      <section class="fee-section">
+        <p class="amount-label">Amount to Pay</p>
+        <p class="amount">₹8,000</p>
+        <p class="refund-note">
+          This amount is <strong>fully refundable by the college</strong> after
+          successful completion of the project.
+        </p>
+      </section>
+
+      <form id="payment-form" class="payment-form">
+        <label for="studentName">Student Name</label>
+        <input
+          type="text"
+          id="studentName"
+          name="studentName"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="rollNumber">Roll Number</label>
+        <input
+          type="text"
+          id="rollNumber"
+          name="rollNumber"
+          placeholder="Enter your roll number"
+          required
+        />
+
+        <label for="email">College Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@college.edu"
+          required
+        />
+
+        <button type="submit">Pay ₹8,000</button>
+      </form>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
